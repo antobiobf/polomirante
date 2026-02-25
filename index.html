@@ -13,16 +13,23 @@
     gtag('config', 'G-X6ZHDW0RZX');
   </script>
 
+  <script>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-970648460"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    if (window.location.hash === '#secCardapio') {
 
-  gtag('config', 'AW-970648460');
-</script>
+      window.location.replace('https://polomirante.com.br/cardapio/CARDAPIOS.pdf');
+    }
+  </script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-970648460"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'AW-970648460');
+  </script>
 
 
   <meta charset="utf-8" />
@@ -35,7 +42,7 @@
     content="Descubra o Polo Mirante, o Carnaval familiar e cultural no coração do Recife Antigo. Venha vivenciar música, gastronomia e diversão entre os dias 15 a 17 de fevereiro de 2026."
     name="description" />
   <meta content="pt" name="language" />
-  <meta content="Polo Mirante — Carnaval 2026" property="og:title" />
+  <meta content="- Polo Mirante — Carnaval 2026 " property="og:title" />
   <meta
     content="Descubra o Polo Mirante, o Carnaval familiar e cultural no coração do Recife Antigo. Venha vivenciar música, gastronomia e diversão entre os dias 15 a 17 de fevereiro de 2026."
     property="og:description" />
@@ -586,7 +593,7 @@
 
                     <div
                       class="group bg-white/5 rounded-xl p-5 border border-white/10 hover:bg-white/10 transition-all duration-200">
-                      <h4 class="font-bold text-white text-lg mb-2">Dinah Santos</h4>
+                      <h4 class="font-bold text-white text-lg mb-2">Cris Galvão</h4>
 
                       <div class="flex items-center gap-2 text-gray-400 text-sm">
                         <i class="far fa-calendar"></i>
@@ -599,8 +606,8 @@
 
                     <div
                       class="group bg-white/5 rounded-xl p-5 border border-white/10 hover:bg-white/10 transition-all duration-200">
-                      <h4 class="font-bold text-white text-lg mb-2">Cris Galvão</h4>
 
+                      <h4 class="font-bold text-white text-lg mb-2">Dinah Santos</h4>
                       <div class="flex items-center gap-2 text-gray-400 text-sm">
                         <i class="far fa-calendar"></i>
                         <span>17/02</span>
@@ -850,7 +857,7 @@
                         <i class="fas fa-check-circle text-[var(--primary-color)]">
                         </i>
                         <span>
-                          Todas as atrações inclusas
+                          Todas as apresentações inclusas
                         </span>
                       </li>
                       <li class="flex items-center gap-3 text-[var(--gray-text-color)]">
@@ -864,7 +871,7 @@
                         <i class="fas fa-check-circle text-[var(--primary-color)]">
                         </i>
                         <span>
-                          Arena infantil gratuita
+                          Estrutura com conforto e segurança
                         </span>
                       </li>
                     </ul>
@@ -919,7 +926,7 @@
                         <i class="fas fa-check-circle text-[var(--accent-color)]">
                         </i>
                         <span>
-                          Todas as atrações e áreas
+                          Estrutura com conforto e segurança
                         </span>
                       </li>
                       <li class="flex items-center gap-3 text-white">
@@ -1311,6 +1318,508 @@
               </div>
             </div>
           </section>
+
+
+          <section
+            class="code-section py-20 bg-gradient-to-br from-[var(--medium-background-color)] to-[var(--light-background-color)]"
+            id="secExpositores">
+            <div class="container mx-auto px-4 lg:px-8">
+              <div class="max-w-6xl mx-auto">
+
+                <!-- Header -->
+                <div class="text-center mb-16">
+                  <div class="inline-block bg-[var(--primary-color)] bg-opacity-10 px-4 py-2 rounded-full mb-4">
+                    <span style="color: white;"
+                      class="text-[var(--primary-color)] font-semibold text-sm uppercase tracking-wide">
+                      Feira
+                    </span>
+                  </div>
+
+                  <h2
+                    class="font-[var(--font-family-heading)] text-4xl sm:text-5xl font-bold text-[var(--dark-text-color)] mb-4">
+                    Expositores Confirmados
+                  </h2>
+
+                  <p class="text-xl text-[var(--gray-text-color)] max-w-3xl mx-auto">
+                    Lista de expositores confirmados (nome + Instagram), conforme formulário.
+                  </p>
+                </div>
+
+                <!-- Table (md+) -->
+                <div
+                  class="hidden md:block bg-white rounded-3xl shadow-2xl border-2 border-[var(--light-border-color)] overflow-hidden">
+                  <div class="p-6 border-b border-[var(--light-border-color)] flex items-center justify-between gap-4">
+                    <div>
+                      <h3 class="font-bold text-[var(--dark-text-color)] text-xl">Lista de Expositores</h3>
+                      <p class="text-[var(--gray-text-color)] text-sm">Clique no Instagram para visitar.</p>
+                    </div>
+
+                    <div class="inline-flex items-center gap-2 text-[var(--gray-text-color)] text-sm">
+                      <i class="fas fa-info-circle text-[var(--primary-color)]"></i>
+                      <span>Atualize conforme novas confirmações</span>
+                    </div>
+                  </div>
+
+                  <div class="overflow-x-auto">
+                    <table class="w-full text-left">
+                      <thead class="bg-[var(--light-background-color)]">
+                        <tr>
+                          <th class="px-6 py-4 text-sm font-bold text-[var(--dark-text-color)]">Marca / Expositor</th>
+                          <th class="px-6 py-4 text-sm font-bold text-[var(--dark-text-color)]">Instagram</th>
+                        </tr>
+                      </thead>
+
+                      <tbody class="divide-y divide-[var(--light-border-color)]">
+
+                        <tr class="hover:bg-[var(--light-background-color)] transition-colors">
+                          <td class="px-6 py-4">
+                            <p class="font-semibold text-[var(--dark-text-color)]">Márcio Fushimi</p>
+                          </td>
+                          <td class="px-6 py-4">
+                            <a class="text-[var(--primary-color)] font-semibold hover:underline" target="_blank"
+                              href="https://instagram.com/kobesushieventos">@kobesushieventos</a>
+                          </td>
+                        </tr>
+
+                        <tr class="hover:bg-[var(--light-background-color)] transition-colors">
+                          <td class="px-6 py-4">
+                            <p class="font-semibold text-[var(--dark-text-color)]">Elisa Helena Sene Santos</p>
+                          </td>
+                          <td class="px-6 py-4">
+                            <a class="text-[var(--primary-color)] font-semibold hover:underline" target="_blank"
+                              href="https://instagram.com/pedeacai_recife">@pedeacai_recife</a>
+                          </td>
+                        </tr>
+
+                        <tr class="hover:bg-[var(--light-background-color)] transition-colors">
+                          <td class="px-6 py-4">
+                            <p class="font-semibold text-[var(--dark-text-color)]">Jane Cristina lira</p>
+                          </td>
+                          <td class="px-6 py-4">
+                            <a class="text-[var(--primary-color)] font-semibold hover:underline" target="_blank"
+                              href="https://instagram.com/nusacocoqueteis">@nusacocoqueteis</a>
+                          </td>
+                        </tr>
+
+                        <tr class="hover:bg-[var(--light-background-color)] transition-colors">
+                          <td class="px-6 py-4">
+                            <p class="font-semibold text-[var(--dark-text-color)]">Tibério macedo</p>
+                          </td>
+                          <td class="px-6 py-4">
+                            <a class="text-[var(--primary-color)] font-semibold hover:underline" target="_blank"
+                              href="https://instagram.com/sanduichedeporchetta">@sanduichedeporchetta</a>
+                          </td>
+                        </tr>
+
+                        <tr class="hover:bg-[var(--light-background-color)] transition-colors">
+                          <td class="px-6 py-4">
+                            <p class="font-semibold text-[var(--dark-text-color)]">Kéllyta de Souza Pereira</p>
+                          </td>
+                          <td class="px-6 py-4">
+                            <a class="text-[var(--primary-color)] font-semibold hover:underline" target="_blank"
+                              href="https://instagram.com/donnacecygoumert">@donnacecygoumert</a>
+                          </td>
+                        </tr>
+
+                        <tr class="hover:bg-[var(--light-background-color)] transition-colors">
+                          <td class="px-6 py-4">
+                            <p class="font-semibold text-[var(--dark-text-color)]">Emanuelle Patricia Barros de Lima</p>
+                          </td>
+                          <td class="px-6 py-4">
+                            <a class="text-[var(--primary-color)] font-semibold hover:underline" target="_blank"
+                              href="https://instagram.com/caldinhodaluka">@caldinhodaluka</a>
+                          </td>
+                        </tr>
+
+                        <tr class="hover:bg-[var(--light-background-color)] transition-colors">
+                          <td class="px-6 py-4">
+                            <p class="font-semibold text-[var(--dark-text-color)]">Verônica Gonçalves Costa</p>
+                          </td>
+                          <td class="px-6 py-4">
+                            <a class="text-[var(--primary-color)] font-semibold hover:underline" target="_blank"
+                              href="https://instagram.com/confeitariasuricato">@confeitariasuricato</a>
+                          </td>
+                        </tr>
+
+                        <tr class="hover:bg-[var(--light-background-color)] transition-colors">
+                          <td class="px-6 py-4">
+                            <p class="font-semibold text-[var(--dark-text-color)]">Miwa Sofia Hiramine Kokay</p>
+                          </td>
+                          <td class="px-6 py-4">
+                            <a class="text-[var(--primary-color)] font-semibold hover:underline" target="_blank"
+                              href="https://instagram.com/miwakokay">@miwakokay</a>
+                          </td>
+                        </tr>
+
+                        <tr class="hover:bg-[var(--light-background-color)] transition-colors">
+                          <td class="px-6 py-4">
+                            <p class="font-semibold text-[var(--dark-text-color)]">Waldilane Neri Torres Soares</p>
+                          </td>
+                          <td class="px-6 py-4">
+                            <a class="text-[var(--primary-color)] font-semibold hover:underline" target="_blank"
+                              href="https://instagram.com/doutorabrigadeirodoces">@doutorabrigadeirodoces</a>
+                          </td>
+                        </tr>
+
+                        <tr class="hover:bg-[var(--light-background-color)] transition-colors">
+                          <td class="px-6 py-4">
+                            <p class="font-semibold text-[var(--dark-text-color)]">Diego Adriano Mattos Alves</p>
+                          </td>
+                          <td class="px-6 py-4">
+                            <a class="text-[var(--primary-color)] font-semibold hover:underline" target="_blank"
+                              href="https://instagram.com/seucoxa">@seucoxa</a>
+                          </td>
+                        </tr>
+
+                        <tr class="hover:bg-[var(--light-background-color)] transition-colors">
+                          <td class="px-6 py-4">
+                            <p class="font-semibold text-[var(--dark-text-color)]">Vanessa dos Santos Silva</p>
+                          </td>
+                          <td class="px-6 py-4">
+                            <a class="text-[var(--primary-color)] font-semibold hover:underline" target="_blank"
+                              href="https://instagram.com/opudim_maravilha">@opudim_maravilha</a>
+                          </td>
+                        </tr>
+
+                        <tr class="hover:bg-[var(--light-background-color)] transition-colors">
+                          <td class="px-6 py-4">
+                            <p class="font-semibold text-[var(--dark-text-color)]">Kleber Filipe Santos de Albuquerque
+                              Carvalho</p>
+                          </td>
+                          <td class="px-6 py-4">
+                            <a class="text-[var(--primary-color)] font-semibold hover:underline" target="_blank"
+                              href="https://instagram.com/boraburguer_pe">@boraburguer_pe</a>
+                          </td>
+                        </tr>
+
+                        <tr class="hover:bg-[var(--light-background-color)] transition-colors">
+                          <td class="px-6 py-4">
+                            <p class="font-semibold text-[var(--dark-text-color)]">Gabriel Glasner Pessoa</p>
+                          </td>
+                          <td class="px-6 py-4">
+                            <a class="text-[var(--primary-color)] font-semibold hover:underline" target="_blank"
+                              href="https://instagram.com/pizzerialanatra">@pizzerialanatra</a>
+                          </td>
+                        </tr>
+
+                        <tr class="hover:bg-[var(--light-background-color)] transition-colors">
+                          <td class="px-6 py-4">
+                            <p class="font-semibold text-[var(--dark-text-color)]">Elida Nascimento</p>
+                          </td>
+                          <td class="px-6 py-4">
+                            <a class="text-[var(--primary-color)] font-semibold hover:underline" target="_blank"
+                              href="https://instagram.com/tapiocaecia01">Tapiocaecia01</a>
+                          </td>
+                        </tr>
+
+                        <tr class="hover:bg-[var(--light-background-color)] transition-colors">
+                          <td class="px-6 py-4">
+                            <p class="font-semibold text-[var(--dark-text-color)]">Izabel cristina</p>
+                          </td>
+                          <td class="px-6 py-4">
+                            <a class="text-[var(--primary-color)] font-semibold hover:underline" target="_blank"
+                              href="https://instagram.com/noribatarecife">Noribatarecife</a>
+                          </td>
+                        </tr>
+
+                        <tr class="hover:bg-[var(--light-background-color)] transition-colors">
+                          <td class="px-6 py-4">
+                            <p class="font-semibold text-[var(--dark-text-color)]">Mohammad dahman</p>
+                          </td>
+                          <td class="px-6 py-4">
+                            <a class="text-[var(--primary-color)] font-semibold hover:underline" target="_blank"
+                              href="https://instagram.com/arabesk1215">@arabesk1215</a>
+                          </td>
+                        </tr>
+
+                        <tr class="hover:bg-[var(--light-background-color)] transition-colors">
+                          <td class="px-6 py-4">
+                            <p class="font-semibold text-[var(--dark-text-color)]">Anderson dos Santos Santana</p>
+                          </td>
+                          <td class="px-6 py-4">
+                            <a class="text-[var(--primary-color)] font-semibold hover:underline" target="_blank"
+                              href="https://instagram.com/adspimentas">Adspimentas</a>
+                          </td>
+                        </tr>
+
+                        <tr class="hover:bg-[var(--light-background-color)] transition-colors">
+                          <td class="px-6 py-4">
+                            <p class="font-semibold text-[var(--dark-text-color)]">Aline Pereira</p>
+                          </td>
+                          <td class="px-6 py-4">
+                            <a class="text-[var(--primary-color)] font-semibold hover:underline" target="_blank"
+                              href="https://instagram.com/thetartelettesbr">@thetartelettesbr</a>
+                          </td>
+                        </tr>
+
+                        <tr class="hover:bg-[var(--light-background-color)] transition-colors">
+                          <td class="px-6 py-4">
+                            <p class="font-semibold text-[var(--dark-text-color)]">Ana carolina de souza</p>
+                          </td>
+                          <td class="px-6 py-4">
+                            <a class="text-[var(--primary-color)] font-semibold hover:underline" target="_blank"
+                              href="https://instagram.com/ateliecarolsouza">@ateliecarolsouza</a>
+                          </td>
+                        </tr>
+
+                        <tr class="hover:bg-[var(--light-background-color)] transition-colors">
+                          <td class="px-6 py-4">
+                            <p class="font-semibold text-[var(--dark-text-color)]">Maria Eduarda Moura de Oliveira</p>
+                          </td>
+                          <td class="px-6 py-4">
+                            <a class="text-[var(--primary-color)] font-semibold hover:underline" target="_blank"
+                              href="https://instagram.com/bravo_camisaria">@bravo_camisaria</a>
+                          </td>
+                        </tr>
+
+                        <tr class="hover:bg-[var(--light-background-color)] transition-colors">
+                          <td class="px-6 py-4">
+                            <p class="font-semibold text-[var(--dark-text-color)]">Meire Maria da Silva</p>
+                          </td>
+                          <td class="px-6 py-4">
+                            <a class="text-[var(--primary-color)] font-semibold hover:underline" target="_blank"
+                              href="https://instagram.com/massoterapeuta_meiresilva">@massoterapeuta_meiresilva</a>
+                          </td>
+                        </tr>
+
+                        <tr class="hover:bg-[var(--light-background-color)] transition-colors">
+                          <td class="px-6 py-4">
+                            <p class="font-semibold text-[var(--dark-text-color)]">Rosiane da Conceição marcolino</p>
+                          </td>
+                          <td class="px-6 py-4">
+                            <a class="text-[var(--primary-color)] font-semibold hover:underline" target="_blank"
+                              href="https://instagram.com/torresmo_mineirouai">@torresmo_mineirouai</a>
+                          </td>
+                        </tr>
+
+                        <!-- NOVOS (estavam no PDF e faltavam no seu código) -->
+                        <tr class="hover:bg-[var(--light-background-color)] transition-colors">
+                          <td class="px-6 py-4">
+                            <p class="font-semibold text-[var(--dark-text-color)]">Jefferson Oliveira</p>
+                          </td>
+                          <td class="px-6 py-4">
+                            <a class="text-[var(--primary-color)] font-semibold hover:underline" target="_blank"
+                              href="https://instagram.com/recife.wine">@recife.wine</a>
+                          </td>
+                        </tr>
+
+                        <tr class="hover:bg-[var(--light-background-color)] transition-colors">
+                          <td class="px-6 py-4">
+                            <p class="font-semibold text-[var(--dark-text-color)]">Chef Robertinho</p>
+                          </td>
+                          <td class="px-6 py-4">
+                            <a class="text-[var(--primary-color)] font-semibold hover:underline" target="_blank"
+                              href="https://instagram.com/chefrobertinholima">@chefrobertinholima</a>
+                          </td>
+                        </tr>
+
+                        <tr class="hover:bg-[var(--light-background-color)] transition-colors">
+                          <td class="px-6 py-4">
+                            <p class="font-semibold text-[var(--dark-text-color)]">Roberto Freire</p>
+                          </td>
+                          <td class="px-6 py-4">
+                            <a class="text-[var(--primary-color)] font-semibold hover:underline" target="_blank"
+                              href="https://instagram.com/robertofreire">@robertofreire</a>
+                          </td>
+                        </tr>
+
+                        <tr class="hover:bg-[var(--light-background-color)] transition-colors">
+                          <td class="px-6 py-4">
+                            <p class="font-semibold text-[var(--dark-text-color)]">Marcia Almeida</p>
+                          </td>
+                          <td class="px-6 py-4">
+                            <a class="text-[var(--primary-color)] font-semibold hover:underline" target="_blank"
+                              href="https://instagram.com/abracadabraspainfantil">@abracadabraspainfantil</a>
+                          </td>
+                        </tr>
+
+                        <tr class="hover:bg-[var(--light-background-color)] transition-colors">
+                          <td class="px-6 py-4">
+                            <p class="font-semibold text-[var(--dark-text-color)]">Albezania Helio de Lima</p>
+                          </td>
+                          <td class="px-6 py-4">
+                            <a class="text-[var(--primary-color)] font-semibold hover:underline" target="_blank"
+                              href="https://instagram.com/albezania">@Albezania</a>
+                          </td>
+                        </tr>
+
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                <!-- Mobile (sm) -->
+                <div class="md:hidden space-y-4">
+
+                  <div class="bg-white rounded-2xl p-5 shadow-lg border-2 border-[var(--light-border-color)]">
+                    <p class="font-bold text-[var(--dark-text-color)] text-lg">Márcio Fushimi</p>
+                    <a class="text-[var(--primary-color)] font-semibold hover:underline" target="_blank"
+                      href="https://instagram.com/kobesushieventos">@kobesushieventos</a>
+                  </div>
+
+                  <div class="bg-white rounded-2xl p-5 shadow-lg border-2 border-[var(--light-border-color)]">
+                    <p class="font-bold text-[var(--dark-text-color)] text-lg">Elisa Helena Sene Santos</p>
+                    <a class="text-[var(--primary-color)] font-semibold hover:underline" target="_blank"
+                      href="https://instagram.com/pedeacai_recife">@pedeacai_recife</a>
+                  </div>
+
+                  <div class="bg-white rounded-2xl p-5 shadow-lg border-2 border-[var(--light-border-color)]">
+                    <p class="font-bold text-[var(--dark-text-color)] text-lg">Jane Cristina lira</p>
+                    <a class="text-[var(--primary-color)] font-semibold hover:underline" target="_blank"
+                      href="https://instagram.com/nusacocoqueteis">@nusacocoqueteis</a>
+                  </div>
+
+                  <div class="bg-white rounded-2xl p-5 shadow-lg border-2 border-[var(--light-border-color)]">
+                    <p class="font-bold text-[var(--dark-text-color)] text-lg">Tibério macedo</p>
+                    <a class="text-[var(--primary-color)] font-semibold hover:underline" target="_blank"
+                      href="https://instagram.com/sanduichedeporchetta">@sanduichedeporchetta</a>
+                  </div>
+
+                  <div class="bg-white rounded-2xl p-5 shadow-lg border-2 border-[var(--light-border-color)]">
+                    <p class="font-bold text-[var(--dark-text-color)] text-lg">Kéllyta de Souza Pereira</p>
+                    <a class="text-[var(--primary-color)] font-semibold hover:underline" target="_blank"
+                      href="https://instagram.com/donnacecygoumert">@donnacecygoumert</a>
+                  </div>
+
+                  <div class="bg-white rounded-2xl p-5 shadow-lg border-2 border-[var(--light-border-color)]">
+                    <p class="font-bold text-[var(--dark-text-color)] text-lg">Emanuelle Patricia Barros de Lima</p>
+                    <a class="text-[var(--primary-color)] font-semibold hover:underline" target="_blank"
+                      href="https://instagram.com/caldinhodaluka">@caldinhodaluka</a>
+                  </div>
+
+                  <div class="bg-white rounded-2xl p-5 shadow-lg border-2 border-[var(--light-border-color)]">
+                    <p class="font-bold text-[var(--dark-text-color)] text-lg">Verônica Gonçalves Costa</p>
+                    <a class="text-[var(--primary-color)] font-semibold hover:underline" target="_blank"
+                      href="https://instagram.com/confeitariasuricato">@confeitariasuricato</a>
+                  </div>
+
+                  <div class="bg-white rounded-2xl p-5 shadow-lg border-2 border-[var(--light-border-color)]">
+                    <p class="font-bold text-[var(--dark-text-color)] text-lg">Miwa Sofia Hiramine Kokay</p>
+                    <a class="text-[var(--primary-color)] font-semibold hover:underline" target="_blank"
+                      href="https://instagram.com/miwakokay">@miwakokay</a>
+                  </div>
+
+                  <div class="bg-white rounded-2xl p-5 shadow-lg border-2 border-[var(--light-border-color)]">
+                    <p class="font-bold text-[var(--dark-text-color)] text-lg">Waldilane Neri Torres Soares</p>
+                    <a class="text-[var(--primary-color)] font-semibold hover:underline" target="_blank"
+                      href="https://instagram.com/doutorabrigadeirodoces">@doutorabrigadeirodoces</a>
+                  </div>
+
+                  <div class="bg-white rounded-2xl p-5 shadow-lg border-2 border-[var(--light-border-color)]">
+                    <p class="font-bold text-[var(--dark-text-color)] text-lg">Diego Adriano Mattos Alves</p>
+                    <a class="text-[var(--primary-color)] font-semibold hover:underline" target="_blank"
+                      href="https://instagram.com/seucoxa">@seucoxa</a>
+                  </div>
+
+                  <div class="bg-white rounded-2xl p-5 shadow-lg border-2 border-[var(--light-border-color)]">
+                    <p class="font-bold text-[var(--dark-text-color)] text-lg">Vanessa dos Santos Silva</p>
+                    <a class="text-[var(--primary-color)] font-semibold hover:underline" target="_blank"
+                      href="https://instagram.com/opudim_maravilha">@opudim_maravilha</a>
+                  </div>
+
+                  <div class="bg-white rounded-2xl p-5 shadow-lg border-2 border-[var(--light-border-color)]">
+                    <p class="font-bold text-[var(--dark-text-color)] text-lg">Kleber Filipe Santos de Albuquerque
+                      Carvalho</p>
+                    <a class="text-[var(--primary-color)] font-semibold hover:underline" target="_blank"
+                      href="https://instagram.com/boraburguer_pe">@boraburguer_pe</a>
+                  </div>
+
+                  <div class="bg-white rounded-2xl p-5 shadow-lg border-2 border-[var(--light-border-color)]">
+                    <p class="font-bold text-[var(--dark-text-color)] text-lg">Gabriel Glasner Pessoa</p>
+                    <a class="text-[var(--primary-color)] font-semibold hover:underline" target="_blank"
+                      href="https://instagram.com/pizzerialanatra">@pizzerialanatra</a>
+                  </div>
+
+                  <div class="bg-white rounded-2xl p-5 shadow-lg border-2 border-[var(--light-border-color)]">
+                    <p class="font-bold text-[var(--dark-text-color)] text-lg">Elida Nascimento</p>
+                    <a class="text-[var(--primary-color)] font-semibold hover:underline" target="_blank"
+                      href="https://instagram.com/tapiocaecia01">Tapiocaecia01</a>
+                  </div>
+
+                  <div class="bg-white rounded-2xl p-5 shadow-lg border-2 border-[var(--light-border-color)]">
+                    <p class="font-bold text-[var(--dark-text-color)] text-lg">Izabel cristina</p>
+                    <a class="text-[var(--primary-color)] font-semibold hover:underline" target="_blank"
+                      href="https://instagram.com/noribatarecife">Noribatarecife</a>
+                  </div>
+
+                  <div class="bg-white rounded-2xl p-5 shadow-lg border-2 border-[var(--light-border-color)]">
+                    <p class="font-bold text-[var(--dark-text-color)] text-lg">Mohammad dahman</p>
+                    <a class="text-[var(--primary-color)] font-semibold hover:underline" target="_blank"
+                      href="https://instagram.com/arabesk1215">@arabesk1215</a>
+                  </div>
+
+                  <div class="bg-white rounded-2xl p-5 shadow-lg border-2 border-[var(--light-border-color)]">
+                    <p class="font-bold text-[var(--dark-text-color)] text-lg">Anderson dos Santos Santana</p>
+                    <a class="text-[var(--primary-color)] font-semibold hover:underline" target="_blank"
+                      href="https://instagram.com/adspimentas">Adspimentas</a>
+                  </div>
+
+                  <div class="bg-white rounded-2xl p-5 shadow-lg border-2 border-[var(--light-border-color)]">
+                    <p class="font-bold text-[var(--dark-text-color)] text-lg">Aline Pereira</p>
+                    <a class="text-[var(--primary-color)] font-semibold hover:underline" target="_blank"
+                      href="https://instagram.com/thetartelettesbr">@thetartelettesbr</a>
+                  </div>
+
+                  <div class="bg-white rounded-2xl p-5 shadow-lg border-2 border-[var(--light-border-color)]">
+                    <p class="font-bold text-[var(--dark-text-color)] text-lg">Ana carolina de souza</p>
+                    <a class="text-[var(--primary-color)] font-semibold hover:underline" target="_blank"
+                      href="https://instagram.com/ateliecarolsouza">@ateliecarolsouza</a>
+                  </div>
+
+                  <div class="bg-white rounded-2xl p-5 shadow-lg border-2 border-[var(--light-border-color)]">
+                    <p class="font-bold text-[var(--dark-text-color)] text-lg">Maria Eduarda Moura de Oliveira</p>
+                    <a class="text-[var(--primary-color)] font-semibold hover:underline" target="_blank"
+                      href="https://instagram.com/bravo_camisaria">@bravo_camisaria</a>
+                  </div>
+
+                  <div class="bg-white rounded-2xl p-5 shadow-lg border-2 border-[var(--light-border-color)]">
+                    <p class="font-bold text-[var(--dark-text-color)] text-lg">Meire Maria da Silva</p>
+                    <a class="text-[var(--primary-color)] font-semibold hover:underline" target="_blank"
+                      href="https://instagram.com/massoterapeuta_meiresilva">@massoterapeuta_meiresilva</a>
+                  </div>
+
+                  <div class="bg-white rounded-2xl p-5 shadow-lg border-2 border-[var(--light-border-color)]">
+                    <p class="font-bold text-[var(--dark-text-color)] text-lg">Rosiane da Conceição marcolino</p>
+                    <a class="text-[var(--primary-color)] font-semibold hover:underline" target="_blank"
+                      href="https://instagram.com/torresmo_mineirouai">@torresmo_mineirouai</a>
+                  </div>
+
+                  <!-- NOVOS -->
+                  <div class="bg-white rounded-2xl p-5 shadow-lg border-2 border-[var(--light-border-color)]">
+                    <p class="font-bold text-[var(--dark-text-color)] text-lg">Jefferson Oliveira</p>
+                    <a class="text-[var(--primary-color)] font-semibold hover:underline" target="_blank"
+                      href="https://instagram.com/recife.wine">@recife.wine</a>
+                  </div>
+
+                  <div class="bg-white rounded-2xl p-5 shadow-lg border-2 border-[var(--light-border-color)]">
+                    <p class="font-bold text-[var(--dark-text-color)] text-lg">Chef Robertinho</p>
+                    <a class="text-[var(--primary-color)] font-semibold hover:underline" target="_blank"
+                      href="https://instagram.com/chefrobertinholima">@chefrobertinholima</a>
+                  </div>
+
+                  <div class="bg-white rounded-2xl p-5 shadow-lg border-2 border-[var(--light-border-color)]">
+                    <p class="font-bold text-[var(--dark-text-color)] text-lg">Roberto Freire</p>
+                    <a class="text-[var(--primary-color)] font-semibold hover:underline" target="_blank"
+                      href="https://instagram.com/robertofreire">@robertofreire</a>
+                  </div>
+
+                  <div class="bg-white rounded-2xl p-5 shadow-lg border-2 border-[var(--light-border-color)]">
+                    <p class="font-bold text-[var(--dark-text-color)] text-lg">Marcia Almeida</p>
+                    <a class="text-[var(--primary-color)] font-semibold hover:underline" target="_blank"
+                      href="https://instagram.com/abracadabraspainfantil">@abracadabraspainfantil</a>
+                  </div>
+
+                  <div class="bg-white rounded-2xl p-5 shadow-lg border-2 border-[var(--light-border-color)]">
+                    <p class="font-bold text-[var(--dark-text-color)] text-lg">Albezania Helio de Lima</p>
+                    <a class="text-[var(--primary-color)] font-semibold hover:underline" target="_blank"
+                      href="https://instagram.com/albezania">@Albezania</a>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </section>
         </div>
         <div>
           <footer class="code-section bg-[var(--dark-background-color)] text-white py-16" id="global-footer">
@@ -1318,10 +1827,11 @@
               <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
                 <!-- Logo & About -->
                 <div class="lg:col-span-2">
-                  <a class="inline-block mb-2" href="/">
+                  <!-- <a class="inline-block mb-2" href="/">
                     <img alt="Polo Mirante" style="height: 164px;" class="h-12 w-auto" data-logo=""
                       src="images/polomirante_marcareduzida1.png" />
-                  </a>
+                  </a> -->
+                  <strong>POLO MIRANTE</strong>
                   <p class="text-gray-400 leading-relaxed max-w-md mb-6">
                     Carnaval cultural e familiar no Mirante do Paço. Três dias de música,
                     gastronomia e diversão para todas as idades no coração do Recife

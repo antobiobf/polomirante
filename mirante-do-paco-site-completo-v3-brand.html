@@ -1,0 +1,1252 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mirante do Paço | Rooftop para eventos no Recife Antigo</title>
+  <meta name="description"
+    content="Mirante do Paço: rooftop para eventos no Recife Antigo, com capacidade para 2.500 pessoas e 600 vagas de garagem. Solicite orçamento e produza seu evento do zero com fornecedores credenciados." />
+  <meta property="og:title" content="Mirante do Paço | Rooftop para eventos no Recife Antigo" />
+  <meta property="og:description"
+    content="Capacidade 2.500 pessoas • 600 vagas • Produção completa do seu evento. Solicite orçamento." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'system-ui', 'Segoe UI', 'Roboto', 'Arial', 'sans-serif'] },
+          colors: {
+            brandBlue: '#274B69',
+            brandMint: '#9ECECA',
+            brandSteel: '#68859C',
+            brandCoral: '#D5816F',
+            brandWine: '#9C6A68',
+            slateish: '#0F172A',
+            gold: '#9ECECA'
+          },
+          boxShadow: { soft: '0 10px 30px rgba(2, 6, 23, 0.12)' }
+        }
+      }
+    }
+  </script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    details>summary {
+      list-style: none;
+    }
+
+    details>summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .glass {
+      background: rgba(15, 23, 42, 0.55);
+      backdrop-filter: blur(10px);
+    }
+  </style>
+
+  <!-- LocalBusiness structured data (sem números não confirmados) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Mirante do Paço",
+    "telephone": "+55-81-97345-6956",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Tv. do Amorim, 75 - 4º andar",
+      "addressLocality": "Recife",
+      "addressRegion": "PE",
+      "postalCode": "50030-070",
+      "addressCountry": "BR"
+    }
+  }
+  </script>
+</head>
+
+<body class="bg-slate-950 text-white font-sans">
+  <!-- Top bar -->
+  <div class="hidden md:block bg-slate-900/70 border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-6 py-2 flex items-center justify-between text-sm text-white/80">
+      <div class="flex items-center gap-3">
+        <span class="inline-flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+          Aberto · Fecha 17:00
+        </span>
+        <span class="text-white/40">•</span>
+        <span>Recife Antigo, PE</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="tel:+5581973456956" class="hover:text-white">📞 (81) 97345-6956</a>
+        <a href="#orcamento" class="hover:text-white">Solicitar orçamento</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-40 bg-white/10 backdrop-blur-md border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#topo" class="flex items-center gap-3">
+        <div
+          class="w-10 h-10 rounded-2xl bg-gold/20 border border-gold/30 flex items-center justify-center shadow-soft">
+          <span class="text-gold font-extrabold">MP</span>
+        </div>
+        <div class="leading-tight">
+          <p class="font-extrabold tracking-tight">Mirante do Paço</p>
+          <p class="text-xs text-white/60 -mt-0.5">Rooftop para eventos • Recife Antigo</p>
+        </div>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-6 text-sm text-white/80">
+        <a class="hover:text-white" href="#sobre">Sobre</a>
+        <a class="hover:text-white" href="#diferenciais">Diferenciais</a>
+        <a class="hover:text-white" href="#duvidas">Dúvidas</a>
+        <a class="hover:text-white" href="#localizacao">Localização</a>
+        <a class="hover:text-white" href="#orcamento">Orçamento</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="#orcamento"
+          class="hidden md:inline-flex items-center justify-center px-4 py-2 rounded-xl bg-white text-slate-900 font-semibold shadow-soft hover:bg-white/90">
+          Solicitar orçamento
+        </a>
+        <a id="btnWhatsappTop" target="_blank" rel="noopener"
+          class="inline-flex items-center justify-center px-4 py-2 rounded-xl bg-emerald-500 text-emerald-950 font-semibold shadow-soft hover:bg-emerald-400">
+          WhatsApp
+        </a>
+
+        <!-- Mobile menu -->
+        <button id="menuBtn"
+          class="lg:hidden inline-flex items-center justify-center w-10 h-10 rounded-xl border border-white/10 hover:bg-white/5"
+          aria-label="Abrir menu">
+          ☰
+        </button>
+      </div>
+    </div>
+
+    <div id="mobileMenu" class="lg:hidden hidden border-t border-white/10 bg-slate-950/80 backdrop-blur-md">
+      <div class="max-w-7xl mx-auto px-6 py-4 grid gap-3 text-sm text-white/80">
+        <a class="hover:text-white" href="#sobre">Sobre</a>
+        <a class="hover:text-white" href="#diferenciais">Diferenciais</a>
+        <a class="hover:text-white" href="#duvidas">Dúvidas</a>
+        <a class="hover:text-white" href="#localizacao">Localização</a>
+        <a class="hover:text-white" href="#orcamento">Solicite seu orçamento</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero / Banner -->
+  <section id="topo" class="relative overflow-hidden">
+    <div class="absolute inset-0">
+      <img src="images/banner4.jpg" alt="Vista do rooftop do Mirante do Paço (imagem ilustrativa)"
+        class="w-full h-full object-cover opacity-70">
+      <div class="absolute inset-0 bg-gradient-to-b from-slate-950/30 via-slate-950/70 to-slate-950"></div>
+      <div class="absolute -top-40 -right-40 w-96 h-96 bg-gold/15 blur-3xl rounded-full"></div>
+      <div class="absolute -bottom-52 -left-40 w-[520px] h-[520px] bg-sky-500/10 blur-3xl rounded-full"></div>
+    </div>
+
+    <div class="relative max-w-7xl mx-auto px-6 py-16 md:py-24">
+      <div class="grid lg:grid-cols-12 gap-10 items-center">
+        <div class="lg:col-span-7">
+          <div
+            class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-white/10 glass text-white/80 text-sm">
+            ⭐ <span class="font-semibold text-white">4,7</span>
+            <span class="text-white/50">no Google</span>
+            <span class="text-white/40">•</span>
+            <span>Rooftop com uma vista única</span>
+          </div>
+
+          <h1 class="mt-5 text-4xl md:text-6xl font-extrabold tracking-tight">
+            O rooftop mais icônico para o seu <span class="text-gold">evento</span> no Recife Antigo.
+          </h1>
+
+          <p class="mt-5 text-lg md:text-xl text-white/80 leading-relaxed">
+            Desfrute de uma vista deslumbrante da cidade do Recife e da história de Pernambuco aos seus pés.
+            Um espaço versátil, perfeito para shows, eventos corporativos, casamentos e celebrações inesquecíveis.
+          </p>
+
+
+          <div class="mt-8 flex flex-col sm:flex-row gap-3">
+            <a href="#orcamento"
+              class="inline-flex items-center justify-center px-6 py-3 rounded-2xl bg-white text-slate-900 font-semibold shadow-soft hover:bg-white/90">
+              Solicitar orçamento
+            </a>
+            <a id="btnWhatsappHero" target="_blank" rel="noopener"
+              class="inline-flex items-center justify-center px-6 py-3 rounded-2xl bg-emerald-500 text-emerald-950 font-semibold shadow-soft hover:bg-emerald-400">
+              Falar no WhatsApp
+            </a>
+            <a href="#galerias"
+              class="inline-flex items-center justify-center px-6 py-3 rounded-2xl border border-white/15 text-white/90 hover:bg-white/5">
+              Ver galerias por evento
+            </a>
+          </div>
+
+          <div class="mt-10 grid grid-cols-2 md:grid-cols-4 gap-3">
+            <div class="p-4 rounded-2xl border border-white/10 bg-white/5">
+              <p class="text-white/60 text-xs">Capacidade</p>
+              <p class="font-extrabold">2.500 pessoas</p>
+            </div>
+            <div class="p-4 rounded-2xl border border-white/10 bg-white/5">
+              <p class="text-white/60 text-xs">Garagem</p>
+              <p class="font-extrabold">600 vagas</p>
+            </div>
+            <div class="p-4 rounded-2xl border border-white/10 bg-white/5">
+              <p class="text-white/60 text-xs">Estrutura</p>
+              <p class="font-extrabold">3 camarins</p>
+            </div>
+            <div class="p-4 rounded-2xl border border-white/10 bg-white/5">
+              <p class="text-white/60 text-xs">Acesso</p>
+              <p class="font-extrabold">Elevador de carga</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5">
+          <div class="rounded-3xl border border-white/10 bg-white/5 shadow-soft overflow-hidden">
+            <div class="p-6">
+              <p class="text-white/70 text-sm">Cotação rápida</p>
+              <h2 class="text-2xl font-extrabold tracking-tight">Conte sobre o seu evento</h2>
+              <p class="text-white/70 mt-2">Preencha e enviamos uma proposta com agilidade.</p>
+            </div>
+            <div class="px-6 pb-6">
+              <form id="miniForm" class="grid gap-3">
+                <input
+                  class="w-full px-4 py-3 rounded-2xl bg-slateish/70 border border-white/10 focus:outline-none focus:ring-2 focus:ring-gold/50"
+                  name="nome" placeholder="Seu nome" required>
+                <input
+                  class="w-full px-4 py-3 rounded-2xl bg-slateish/70 border border-white/10 focus:outline-none focus:ring-2 focus:ring-gold/50"
+                  name="telefone" placeholder="Telefone/WhatsApp" required>
+                <select
+                  class="w-full px-4 py-3 rounded-2xl bg-slateish/70 border border-white/10 focus:outline-none focus:ring-2 focus:ring-gold/50"
+                  name="tipo">
+                  <option value="">Tipo de evento</option>
+                  <option>Formatura</option>
+                  <option>Casamento</option>
+                  <option>15 anos</option>
+                  <option>Show / Evento cultural</option>
+                  <option>Corporativo</option>
+                  <option>Outro</option>
+                </select>
+                <button class="w-full px-4 py-3 rounded-2xl bg-gold text-slate-950 font-extrabold hover:opacity-90">
+                  Enviar para WhatsApp
+                </button>
+                <p class="text-xs text-white/60">Ao enviar, você será direcionado ao WhatsApp com a mensagem pronta.</p>
+              </form>
+            </div>
+          </div>
+
+          <div class="mt-4 text-sm text-white/70 grid gap-2">
+            <div class="flex items-start gap-2">
+              <span class="mt-0.5">📍</span>
+              <p>Tv. do Amorim, 75 - 4º andar - Recife, PE, 50030-070</p>
+            </div>
+            <div class="flex items-start gap-2">
+              <span class="mt-0.5">🏙️</span>
+              <p>Último piso de edifício garagem (600 vagas), ao lado do Shopping Paço Alfândega</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre -->
+  <section id="sobre" class="py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-12 gap-10 items-start">
+        <div class="lg:col-span-6">
+          <p class="text-gold font-semibold">Sobre</p>
+          <h2 class="mt-2 text-3xl md:text-4xl font-extrabold tracking-tight">Um cenário inesquecível no coração do
+            Recife.</h2>
+          <p class="mt-4 text-white/80 leading-relaxed">
+            O <strong>Mirante do Paço</strong> é um rooftop para eventos no Recife Antigo — com vista panorâmica,
+            energia cultural
+            e estrutura de alto nível. O espaço está localizado no <strong>último piso</strong> de um edifício garagem
+            com <strong>600 vagas</strong>
+            e comporta até <strong>2.500 pessoas</strong>, com formatos que se adaptam ao seu evento.
+          </p>
+
+          <div class="mt-6 grid sm:grid-cols-2 gap-4">
+            <div class="p-5 rounded-2xl border border-white/10 bg-white/5">
+              <p class="font-extrabold">Capacidade</p>
+              <p class="text-sm text-white/70 mt-1">Até <strong>2.500 pessoas</strong> em eventos, com montagem sob
+                medida.</p>
+            </div>
+            <div class="p-5 rounded-2xl border border-white/10 bg-white/5">
+              <p class="font-extrabold">Garagem</p>
+              <p class="text-sm text-white/70 mt-1"><strong>600 vagas</strong> no edifício garagem para sua operação.
+              </p>
+            </div>
+          </div>
+
+          <div class="mt-8 flex gap-3 flex-wrap">
+            <span
+              class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-sm text-white/80">Formaturas</span>
+            <span
+              class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-sm text-white/80">Casamentos</span>
+            <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-sm text-white/80">15 anos</span>
+            <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-sm text-white/80">Shows</span>
+            <span
+              class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-sm text-white/80">Corporativo</span>
+          </div>
+        </div>
+
+        <div class="lg:col-span-6">
+          <div class="grid grid-cols-2 gap-4">
+            <div class="rounded-3xl overflow-hidden border border-white/10 bg-white/5 shadow-soft">
+              <img class="w-full h-56 object-cover" src="https://placehold.co/800x900?text=Rooftop+%2F+Vista"
+                alt="Imagem ilustrativa do espaço">
+            </div>
+            <div class="rounded-3xl overflow-hidden border border-white/10 bg-white/5 shadow-soft">
+              <img class="w-full h-56 object-cover"
+                src="https://placehold.co/800x900?text=Evento+%2F+Ilumina%C3%A7%C3%A3o"
+                alt="Imagem ilustrativa do espaço">
+            </div>
+            <div class="col-span-2 rounded-3xl overflow-hidden border border-white/10 bg-white/5 shadow-soft">
+              <img class="w-full h-64 object-cover"
+                src="https://placehold.co/1200x700?text=Mirante+do+Pa%C3%A7o+%2F+Recife+Antigo"
+                alt="Imagem ilustrativa do rooftop com vista">
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galerias por evento -->
+  <section id="galerias" class="py-16 md:py-24 bg-slate-900/30 border-y border-white/10">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <!-- Título -->
+      <div class="flex items-end justify-between gap-6 flex-wrap">
+        <div>
+          <p class="text-brandMint font-semibold">Galerias</p>
+          <h2 class="mt-2 text-3xl md:text-4xl font-extrabold tracking-tight">
+            Uma galeria para cada tipo de evento
+          </h2>
+          <p class="mt-3 text-white/70 max-w-2xl">
+            Selecione o tipo de evento e visualize o clima do espaço.
+            Substitua depois pelas fotos reais.
+          </p>
+        </div>
+
+        <a href="#orcamento"
+          class="inline-flex items-center justify-center px-5 py-3 rounded-2xl bg-brandMint text-slate-950 font-extrabold hover:opacity-90">
+          Solicite seu orçamento
+        </a>
+      </div>
+
+      <!-- Abas -->
+      <div class="mt-10 flex flex-wrap gap-3">
+        <button
+          class="gallery-tab px-5 py-2 rounded-2xl border border-white/15 text-white/90 hover:bg-white/5 bg-white/5"
+          data-cat="formatura">
+          Formatura
+        </button>
+        <button class="gallery-tab px-5 py-2 rounded-2xl border border-white/15 text-white/90 hover:bg-white/5"
+          data-cat="casamento">
+          Casamento
+        </button>
+        <button class="gallery-tab px-5 py-2 rounded-2xl border border-white/15 text-white/90 hover:bg-white/5"
+          data-cat="quinze">
+          15 anos
+        </button>
+        <button class="gallery-tab px-5 py-2 rounded-2xl border border-white/15 text-white/90 hover:bg-white/5"
+          data-cat="shows">
+          Shows
+        </button>
+        <button class="gallery-tab px-5 py-2 rounded-2xl border border-white/15 text-white/90 hover:bg-white/5"
+          data-cat="corporativo">
+          Corporativos
+        </button>
+      </div>
+
+      <!-- Descrição dinâmica -->
+      <div class="mt-6 max-w-3xl">
+        <h3 id="galleryTitle" class="text-2xl font-extrabold">Formatura</h3>
+        <p id="galleryDesc" class="mt-2 text-white/70">
+          Produção vibrante, palco, iluminação e estrutura para grandes celebrações.
+        </p>
+      </div>
+
+      <!-- Grid de imagens -->
+      <div class="mt-8">
+        <div id="galleryGrid" class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"></div>
+      </div>
+
+      <!-- CTA inferior -->
+      <div class="mt-10 flex justify-center">
+        <a id="btnWhatsappGallery" target="_blank" rel="noopener"
+          class="inline-flex items-center justify-center px-8 py-4 rounded-2xl bg-emerald-500 text-emerald-950 font-extrabold hover:bg-emerald-400 shadow-soft">
+          Quero orçamento para esse evento
+        </a>
+      </div>
+
+      <!-- Lightbox -->
+      <div id="lightbox" class="fixed inset-0 z-[60] hidden items-center justify-center bg-black/80 p-6">
+        <button id="lightboxClose"
+          class="absolute top-5 right-5 w-11 h-11 rounded-2xl border border-white/15 bg-white/5 hover:bg-white/10 text-white"
+          aria-label="Fechar">✕</button>
+        <img id="lightboxImg" alt="Imagem ampliada"
+          class="max-w-full max-h-[85vh] rounded-3xl border border-white/10 shadow-soft" />
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Diferenciais -->
+  <section id="diferenciais" class="py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex items-end justify-between gap-6 flex-wrap">
+        <div>
+          <p class="text-gold font-semibold">Diferenciais</p>
+          <h2 class="mt-2 text-3xl md:text-4xl font-extrabold tracking-tight">Estrutura e operação de verdade</h2>
+          <p class="mt-3 text-white/70 max-w-2xl">
+            Mais do que um rooftop bonito: o Mirante do Paço tem logística, backstage e segurança para grandes
+            produções.
+          </p>
+        </div>
+        <a href="#orcamento"
+          class="inline-flex items-center justify-center px-5 py-3 rounded-2xl bg-gold text-slate-950 font-extrabold hover:opacity-90">
+          Solicite seu orçamento
+        </a>
+      </div>
+
+      <div class="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div class="p-6 rounded-3xl border border-white/10 bg-white/5 shadow-soft">
+          <div class="w-11 h-11 rounded-2xl bg-gold/20 border border-gold/30 flex items-center justify-center">👥</div>
+          <h3 class="mt-4 font-extrabold text-xl">Capacidade 2.500 pessoas</h3>
+          <p class="mt-2 text-white/70">Espaço preparado para grandes públicos, com formatos ajustados ao seu projeto.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-3xl border border-white/10 bg-white/5 shadow-soft">
+          <div class="w-11 h-11 rounded-2xl bg-gold/20 border border-gold/30 flex items-center justify-center">🅿️</div>
+          <h3 class="mt-4 font-extrabold text-xl">600 vagas de garagem</h3>
+          <p class="mt-2 text-white/70">Localizado no último piso de um edifício garagem — mais conforto para público e
+            operação.</p>
+        </div>
+
+        <div class="p-6 rounded-3xl border border-white/10 bg-white/5 shadow-soft">
+          <div class="w-11 h-11 rounded-2xl bg-gold/20 border border-gold/30 flex items-center justify-center">🏗️</div>
+          <h3 class="mt-4 font-extrabold text-xl">Elevador de carga 3 toneladas</h3>
+          <p class="mt-2 text-white/70">Logística facilitada para estruturas, som, cenografia e equipamentos.</p>
+        </div>
+
+        <div class="p-6 rounded-3xl border border-white/10 bg-white/5 shadow-soft">
+          <div class="w-11 h-11 rounded-2xl bg-gold/20 border border-gold/30 flex items-center justify-center">🎭</div>
+          <h3 class="mt-4 font-extrabold text-xl">3 camarins</h3>
+          <p class="mt-2 text-white/70">Backstage completo para artistas, palestrantes e equipe técnica.</p>
+        </div>
+
+        <div class="p-6 rounded-3xl border border-white/10 bg-white/5 shadow-soft">
+          <div class="w-11 h-11 rounded-2xl bg-gold/20 border border-gold/30 flex items-center justify-center">📹</div>
+          <h3 class="mt-4 font-extrabold text-xl">Monitoramento CFTV</h3>
+          <p class="mt-2 text-white/70">Mais segurança e controle para eventos de qualquer porte.</p>
+        </div>
+
+        <div class="p-6 rounded-3xl border border-white/10 bg-white/5 shadow-soft">
+          <div class="w-11 h-11 rounded-2xl bg-gold/20 border border-gold/30 flex items-center justify-center">♿</div>
+          <h3 class="mt-4 font-extrabold text-xl">4 banheiros climatizados e acessíveis</h3>
+          <p class="mt-2 text-white/70">Conforto e acessibilidade para o público.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Produção completa -->
+  <section id="producao" class="py-16 md:py-24 bg-slate-900/30 border-y border-white/10">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-12 gap-10 items-start">
+        <div class="lg:col-span-5">
+          <p class="text-gold font-semibold">Produção</p>
+          <h2 class="mt-2 text-3xl md:text-4xl font-extrabold tracking-tight">A gente produz seu evento do zero</h2>
+          <p class="mt-4 text-white/70 leading-relaxed">
+            Quer tranquilidade? Podemos cuidar de tudo: conceito, fornecedores, operação e entrega — com parceiros
+            <strong>confiáveis</strong> e <strong>credenciados</strong>.
+          </p>
+
+          <div class="mt-6 grid gap-4">
+            <div class="p-5 rounded-3xl border border-white/10 bg-white/5">
+              <p class="text-white/60 text-xs">01</p>
+              <p class="font-extrabold">Planejamento e conceito</p>
+              <p class="text-white/70 text-sm mt-1">Briefing, proposta, layout e cronograma.</p>
+            </div>
+            <div class="p-5 rounded-3xl border border-white/10 bg-white/5">
+              <p class="text-white/60 text-xs">02</p>
+              <p class="font-extrabold">Fornecedores credenciados</p>
+              <p class="text-white/70 text-sm mt-1">Som, luz, palco, bar/buffet, decoração, segurança e limpeza.</p>
+            </div>
+            <div class="p-5 rounded-3xl border border-white/10 bg-white/5">
+              <p class="text-white/60 text-xs">03</p>
+              <p class="font-extrabold">Execução e operação</p>
+              <p class="text-white/70 text-sm mt-1">Equipe alinhada, logística e entrega com padrão profissional.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7">
+          <div class="rounded-3xl border border-white/10 bg-white/5 shadow-soft overflow-hidden">
+            <div class="p-6 md:p-8">
+              <h3 class="text-2xl font-extrabold">O que você pode incluir</h3>
+              <p class="mt-2 text-white/70">Monte seu evento sob medida — ou deixe tudo com a gente.</p>
+
+              <div class="mt-6 grid sm:grid-cols-2 gap-4">
+                <div class="p-5 rounded-3xl border border-white/10 bg-slate-950/30">
+                  <p class="font-extrabold">Som & Iluminação</p>
+                  <p class="text-white/70 text-sm mt-1">Projeto técnico e execução.</p>
+                </div>
+                <div class="p-5 rounded-3xl border border-white/10 bg-slate-950/30">
+                  <p class="font-extrabold">Palco & Cenografia</p>
+                  <p class="text-white/70 text-sm mt-1">Montagem, rigging e produção.</p>
+                </div>
+                <div class="p-5 rounded-3xl border border-white/10 bg-slate-950/30">
+                  <p class="font-extrabold">Bar / Buffet</p>
+                  <p class="text-white/70 text-sm mt-1">Opções conforme o formato do evento.</p>
+                </div>
+                <div class="p-5 rounded-3xl border border-white/10 bg-slate-950/30">
+                  <p class="font-extrabold">Segurança & Operação</p>
+                  <p class="text-white/70 text-sm mt-1">Controle de acesso e equipe de apoio.</p>
+                </div>
+              </div>
+
+              <div class="mt-6 flex flex-col sm:flex-row gap-3">
+                <a id="btnWhatsappProducao" target="_blank" rel="noopener"
+                  class="inline-flex flex-1 items-center justify-center px-6 py-3 rounded-2xl bg-emerald-500 text-emerald-950 font-extrabold hover:bg-emerald-400 shadow-soft">
+                  Quero produção completa
+                </a>
+                <a href="#orcamento"
+                  class="inline-flex items-center justify-center px-6 py-3 rounded-2xl border border-white/15 text-white/90 hover:bg-white/5">
+                  Solicitar orçamento
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-6 p-6 rounded-3xl border border-white/10 bg-gradient-to-br from-white/5 to-transparent">
+            <p class="text-white/70 text-sm">Nota</p>
+            <p class="mt-2 text-white/80 leading-relaxed">
+              Se preferir, você também pode trazer sua produção. A gente alinha regras, horários e logística do espaço.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Clientes -->
+  <section id="clientes" class="py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex items-end justify-between gap-6 flex-wrap">
+        <div>
+          <p class="text-gold font-semibold">Nossos clientes</p>
+          <h2 class="mt-2 text-3xl md:text-4xl font-extrabold tracking-tight">Marcas e projetos que já passaram por aqui
+          </h2>
+          <p class="mt-3 text-white/70 max-w-2xl">Experiência com eventos corporativos, culturais e grandes produções.
+          </p>
+        </div>
+        <a href="#orcamento"
+          class="inline-flex items-center justify-center px-5 py-3 rounded-2xl bg-gold text-slate-950 font-extrabold hover:opacity-90">
+          Faça seu evento aqui
+        </a>
+      </div>
+
+      <div class="mt-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <!-- “logo cards” com nomes -->
+        <div class="p-5 rounded-3xl border border-white/10 bg-white/5 text-center font-extrabold">Petrobras</div>
+        <div class="p-5 rounded-3xl border border-white/10 bg-white/5 text-center font-extrabold">Itaú</div>
+        <div class="p-5 rounded-3xl border border-white/10 bg-white/5 text-center font-extrabold">Bradesco</div>
+        <div class="p-5 rounded-3xl border border-white/10 bg-white/5 text-center font-extrabold">Prefeitura do Recife
+        </div>
+        <div class="p-5 rounded-3xl border border-white/10 bg-white/5 text-center font-extrabold">Hospital Português
+        </div>
+        <div class="p-5 rounded-3xl border border-white/10 bg-white/5 text-center font-extrabold">Porto Digital</div>
+        <div class="p-5 rounded-3xl border border-white/10 bg-white/5 text-center font-extrabold">Downtown</div>
+        <div class="p-5 rounded-3xl border border-white/10 bg-white/5 text-center font-extrabold">Festa Cheia</div>
+        <div class="p-5 rounded-3xl border border-white/10 bg-white/5 text-center font-extrabold">Gola Rolê</div>
+      </div>
+
+      <p class="mt-6 text-xs text-white/50">
+        * Lista apresentada conforme informação fornecida; pode ser atualizada/expandida.
+      </p>
+    </div>
+  </section>
+
+  <!-- Avaliações Google -->
+  <section id="avaliacoes" class="py-16 md:py-24 bg-slate-900/30 border-y border-white/10">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-12 gap-10 items-start">
+        <div class="lg:col-span-5">
+          <p class="text-gold font-semibold">Avaliações</p>
+          <h2 class="mt-2 text-3xl md:text-4xl font-extrabold tracking-tight">4,7 no Google</h2>
+          <p class="mt-4 text-white/70 leading-relaxed">
+            Prova social real: comentários de quem já viveu a experiência no Mirante do Paço.
+          </p>
+
+          <div class="mt-6 p-6 rounded-3xl border border-white/10 bg-white/5">
+            <div class="flex items-center gap-2">
+              <div class="text-2xl">⭐</div>
+              <p class="text-3xl font-extrabold">4,7</p>
+              <p class="text-white/60">/ 5</p>
+            </div>
+            <p class="mt-2 text-white/70 text-sm">Avaliação no Google</p>
+
+            <a id="btnWhatsappAvaliacao" target="_blank" rel="noopener"
+              class="mt-5 inline-flex w-full items-center justify-center px-5 py-3 rounded-2xl bg-emerald-500 text-emerald-950 font-extrabold hover:bg-emerald-400">
+              Quero conhecer a proposta
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7">
+          <div class="grid md:grid-cols-2 gap-4">
+            <div class="p-6 rounded-3xl border border-white/10 bg-white/5 shadow-soft">
+              <p class="text-white/60 text-xs">Google</p>
+              <p class="mt-2 text-lg font-semibold">“Um ótimo lugar para shows, boa acústica, bom espaço físico.”</p>
+              <p class="mt-3 text-sm text-white/60">— Valter Filho</p>
+            </div>
+            <div class="p-6 rounded-3xl border border-white/10 bg-white/5 shadow-soft">
+              <p class="text-white/60 text-xs">Google</p>
+              <p class="mt-2 text-lg font-semibold">“Como trabalhei no Recife antigo há 35 anos, conheço todos os
+                lugares bons.”</p>
+              <p class="mt-3 text-sm text-white/60">— Marcos Batista</p>
+            </div>
+            <div class="p-6 rounded-3xl border border-white/10 bg-white/5 shadow-soft">
+              <p class="text-white/60 text-xs">Google</p>
+              <p class="mt-2 text-lg font-semibold">“Vista incrível e ambiente perfeito para curtir com a galera.”</p>
+              <p class="mt-3 text-sm text-white/60">— Depoimento (exemplo)</p>
+              <p class="mt-3 text-xs text-white/40">* Substitua por prints/textos reais do Google.</p>
+            </div>
+            <div class="p-6 rounded-3xl border border-white/10 bg-white/5 shadow-soft">
+              <p class="text-white/60 text-xs">Transparência</p>
+              <p class="mt-2 text-white/70 leading-relaxed">
+                Também recebemos críticas e usamos isso para melhorar continuamente a experiência do público e a
+                operação do evento.
+              </p>
+              <p class="mt-3 text-sm text-white/60">— Compromisso Mirante do Paço</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Duvidas -->
+  <section id="duvidas" class="py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-12 gap-10 items-start">
+        <div class="lg:col-span-5">
+          <p class="text-gold font-semibold">Dúvidas</p>
+          <h2 class="mt-2 text-3xl md:text-4xl font-extrabold tracking-tight">Perguntas frequentes</h2>
+          <p class="mt-4 text-white/70">As dúvidas mais comuns antes de reservar. Se quiser, fale direto com a equipe.
+          </p>
+
+          <div class="mt-6 p-6 rounded-3xl border border-white/10 bg-white/5">
+            <p class="text-white/80 font-semibold">Precisa de resposta agora?</p>
+            <p class="text-white/70 mt-1">Clique e fale no WhatsApp.</p>
+            <a id="btnWhatsappFaq" target="_blank" rel="noopener"
+              class="mt-4 inline-flex w-full items-center justify-center px-5 py-3 rounded-2xl bg-emerald-500 text-emerald-950 font-extrabold hover:bg-emerald-400">
+              Falar no WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7">
+          <div class="space-y-4">
+            <details class="group rounded-3xl border border-white/10 bg-white/5 p-6">
+              <summary class="cursor-pointer flex items-center justify-between gap-4">
+                <span class="font-bold text-lg">Qual a capacidade do Mirante do Paço?</span>
+                <span class="text-white/60 group-open:rotate-180 transition">⌄</span>
+              </summary>
+              <p class="mt-4 text-white/70 leading-relaxed">
+                A casa comporta até <strong>2.500 pessoas</strong> (conforme o projeto e a montagem do evento).
+              </p>
+            </details>
+
+            <details class="group rounded-3xl border border-white/10 bg-white/5 p-6">
+              <summary class="cursor-pointer flex items-center justify-between gap-4">
+                <span class="font-bold text-lg">Tem estacionamento?</span>
+                <span class="text-white/60 group-open:rotate-180 transition">⌄</span>
+              </summary>
+              <p class="mt-4 text-white/70 leading-relaxed">
+                Sim. O espaço fica no <strong>último piso</strong> de um edifício garagem com <strong>600
+                  vagas</strong>.
+              </p>
+            </details>
+
+            <details class="group rounded-3xl border border-white/10 bg-white/5 p-6">
+              <summary class="cursor-pointer flex items-center justify-between gap-4">
+                <span class="font-bold text-lg">Vocês produzem o evento do zero?</span>
+                <span class="text-white/60 group-open:rotate-180 transition">⌄</span>
+              </summary>
+              <p class="mt-4 text-white/70 leading-relaxed">
+                Sim! Podemos produzir seu evento completo com fornecedores confiáveis e credenciados (som, luz, palco,
+                bar/buffet, decoração, segurança etc.).
+              </p>
+            </details>
+
+            <details class="group rounded-3xl border border-white/10 bg-white/5 p-6">
+              <summary class="cursor-pointer flex items-center justify-between gap-4">
+                <span class="font-bold text-lg">Quais tipos de eventos o espaço recebe?</span>
+                <span class="text-white/60 group-open:rotate-180 transition">⌄</span>
+              </summary>
+              <p class="mt-4 text-white/70 leading-relaxed">
+                Formaturas, casamentos, 15 anos, shows/eventos culturais e eventos corporativos — com formatos
+                personalizados.
+              </p>
+            </details>
+
+            <details class="group rounded-3xl border border-white/10 bg-white/5 p-6">
+              <summary class="cursor-pointer flex items-center justify-between gap-4">
+                <span class="font-bold text-lg">Como solicito orçamento?</span>
+                <span class="text-white/60 group-open:rotate-180 transition">⌄</span>
+              </summary>
+              <p class="mt-4 text-white/70 leading-relaxed">
+                Preencha o formulário em “Solicite seu orçamento” ou chame no WhatsApp. Se possível, envie data, tipo de
+                evento e público estimado.
+              </p>
+            </details>
+
+            <details class="group rounded-3xl border border-white/10 bg-white/5 p-6">
+              <summary class="cursor-pointer flex items-center justify-between gap-4">
+                <span class="font-bold text-lg">Qual o horário de funcionamento?</span>
+                <span class="text-white/60 group-open:rotate-180 transition">⌄</span>
+              </summary>
+              <p class="mt-4 text-white/70 leading-relaxed">
+                Aberto e fecha às 17:00. Para eventos, os horários e logística são combinados conforme a proposta.
+              </p>
+            </details>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Localizacao -->
+  <section id="localizacao" class="py-16 md:py-24 bg-slate-900/30 border-y border-white/10">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex items-end justify-between gap-6 flex-wrap">
+        <div>
+          <p class="text-gold font-semibold">Localização</p>
+          <h2 class="mt-2 text-3xl md:text-4xl font-extrabold tracking-tight">Chegue fácil ao Recife Antigo</h2>
+          <p class="mt-3 text-white/70 max-w-2xl">
+            Tv. do Amorim, 75 - 4º andar - Recife, PE, 50030-070 <br />
+            <span class="text-white/60">Último piso de edifício garagem (600 vagas), ao lado do Shopping Paço
+              Alfândega</span>
+          </p>
+        </div>
+
+        <div class="flex gap-3 flex-wrap">
+          <a id="btnRotas" target="_blank" rel="noopener"
+            class="inline-flex items-center justify-center px-5 py-3 rounded-2xl border border-white/15 text-white/90 hover:bg-white/5">
+            Ver rotas
+          </a>
+          <a href="tel:+5581973456956"
+            class="inline-flex items-center justify-center px-5 py-3 rounded-2xl bg-white text-slate-900 font-extrabold hover:bg-white/90">
+            Ligar
+          </a>
+        </div>
+      </div>
+
+      <div class="mt-10 grid lg:grid-cols-12 gap-6 items-stretch">
+        <div class="lg:col-span-7 rounded-3xl overflow-hidden border border-white/10 bg-white/5 shadow-soft">
+          <iframe title="Mapa - Mirante do Paço" class="w-full h-[360px]" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=Mirante%20do%20Pa%C3%A7o%20Tv.%20do%20Amorim%2C%2075%20Recife%20PE%2050030-070&output=embed">
+          </iframe>
+        </div>
+
+        <div class="lg:col-span-5 rounded-3xl border border-white/10 bg-white/5 shadow-soft p-6">
+          <h3 class="text-xl font-extrabold">Informações rápidas</h3>
+          <div class="mt-4 space-y-3 text-white/75">
+            <div class="flex gap-2">
+              <span>👥</span>
+              <p><strong class="text-white">Capacidade:</strong> 2.500 pessoas</p>
+            </div>
+            <div class="flex gap-2">
+              <span>🅿️</span>
+              <p><strong class="text-white">Garagem:</strong> 600 vagas</p>
+            </div>
+            <div class="flex gap-2">
+              <span>🏙️</span>
+              <p><strong class="text-white">Onde fica:</strong> último piso do edifício garagem</p>
+            </div>
+            <div class="flex gap-2">
+              <span>📞</span>
+              <p><strong class="text-white">Telefone/WhatsApp:</strong> (81) 97345-6956</p>
+            </div>
+            <div class="flex gap-2">
+              <span>⭐</span>
+              <p><strong class="text-white">Avaliação:</strong> 4,7 no Google</p>
+            </div>
+          </div>
+
+          <div class="mt-6 p-4 rounded-2xl border border-white/10 bg-slate-950/30">
+            <p class="text-white/80 font-semibold">Destaque</p>
+            <p class="mt-2 text-white/70">Rooftop com vista e estrutura para eventos com grande público.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solicite seu orçamento -->
+  <section id="orcamento" class="py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-12 gap-10 items-start">
+        <div class="lg:col-span-5">
+          <p class="text-gold font-semibold">Solicite seu orçamento</p>
+          <h2 class="mt-2 text-3xl md:text-4xl font-extrabold tracking-tight">Vamos montar a proposta ideal</h2>
+          <p class="mt-4 text-white/70 leading-relaxed">
+            Conte o tipo de evento, data e público estimado. Você pode enviar pelo formulário (abre no WhatsApp) ou
+            ligar.
+          </p>
+
+          <div class="mt-6 grid gap-3">
+            <a id="btnWhatsappBudget" target="_blank" rel="noopener"
+              class="inline-flex items-center justify-center px-6 py-3 rounded-2xl bg-emerald-500 text-emerald-950 font-extrabold hover:bg-emerald-400 shadow-soft">
+              Enviar mensagem no WhatsApp
+            </a>
+            <a href="tel:+5581973456956"
+              class="inline-flex items-center justify-center px-6 py-3 rounded-2xl border border-white/15 text-white/90 hover:bg-white/5">
+              Ligar agora
+            </a>
+          </div>
+
+          <div class="mt-8 p-6 rounded-3xl border border-white/10 bg-white/5">
+            <p class="text-white/80 font-semibold">Dica para acelerar</p>
+            <p class="text-white/70 mt-2 text-sm">Inclua: data, tipo de evento e número aproximado de pessoas. Assim a
+              equipe retorna com uma proposta mais rápida.</p>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7">
+          <div class="rounded-3xl border border-white/10 bg-white/5 shadow-soft overflow-hidden">
+            <div class="p-6 md:p-8">
+              <h3 class="text-2xl font-extrabold">Formulário de orçamento</h3>
+              <p class="mt-2 text-white/70">Ao enviar, abriremos uma mensagem pronta no WhatsApp.</p>
+
+              <form id="budgetForm" class="mt-6 grid md:grid-cols-2 gap-4">
+                <div class="md:col-span-1">
+                  <label class="text-sm text-white/70">Nome</label>
+                  <input name="nome" required
+                    class="mt-1 w-full px-4 py-3 rounded-2xl bg-slateish/70 border border-white/10 focus:outline-none focus:ring-2 focus:ring-gold/50"
+                    placeholder="Seu nome">
+                </div>
+
+                <div class="md:col-span-1">
+                  <label class="text-sm text-white/70">Telefone/WhatsApp</label>
+                  <input name="telefone" required
+                    class="mt-1 w-full px-4 py-3 rounded-2xl bg-slateish/70 border border-white/10 focus:outline-none focus:ring-2 focus:ring-gold/50"
+                    placeholder="(81) 9xxxx-xxxx">
+                </div>
+
+                <div class="md:col-span-1">
+                  <label class="text-sm text-white/70">E-mail</label>
+                  <input type="email" name="email"
+                    class="mt-1 w-full px-4 py-3 rounded-2xl bg-slateish/70 border border-white/10 focus:outline-none focus:ring-2 focus:ring-gold/50"
+                    placeholder="seuemail@exemplo.com">
+                </div>
+
+                <div class="md:col-span-1">
+                  <label class="text-sm text-white/70">Tipo de evento</label>
+                  <select name="tipo"
+                    class="mt-1 w-full px-4 py-3 rounded-2xl bg-slateish/70 border border-white/10 focus:outline-none focus:ring-2 focus:ring-gold/50">
+                    <option value="">Selecione</option>
+                    <option>Formatura</option>
+                    <option>Casamento</option>
+                    <option>15 anos</option>
+                    <option>Show / Evento cultural</option>
+                    <option>Corporativo</option>
+                    <option>Outro</option>
+                  </select>
+                </div>
+
+                <div class="md:col-span-1">
+                  <label class="text-sm text-white/70">Data pretendida</label>
+                  <input type="date" name="data"
+                    class="mt-1 w-full px-4 py-3 rounded-2xl bg-slateish/70 border border-white/10 focus:outline-none focus:ring-2 focus:ring-gold/50">
+                </div>
+
+                <div class="md:col-span-1">
+                  <label class="text-sm text-white/70">Nº de pessoas (estimativa)</label>
+                  <input type="number" min="1" name="pessoas"
+                    class="mt-1 w-full px-4 py-3 rounded-2xl bg-slateish/70 border border-white/10 focus:outline-none focus:ring-2 focus:ring-gold/50"
+                    placeholder="Ex.: 800">
+                </div>
+
+                <div class="md:col-span-2">
+                  <label class="text-sm text-white/70">Mensagem</label>
+                  <textarea name="mensagem" rows="4"
+                    class="mt-1 w-full px-4 py-3 rounded-2xl bg-slateish/70 border border-white/10 focus:outline-none focus:ring-2 focus:ring-gold/50"
+                    placeholder="Conte detalhes (horário, estilo do evento, necessidades de som/luz, etc.)"></textarea>
+                </div>
+
+                <div class="md:col-span-2 flex flex-col sm:flex-row gap-3">
+                  <button class="flex-1 px-6 py-3 rounded-2xl bg-gold text-slate-950 font-extrabold hover:opacity-90">
+                    Enviar para WhatsApp
+                  </button>
+                  <button type="reset"
+                    class="px-6 py-3 rounded-2xl border border-white/15 text-white/90 hover:bg-white/5">
+                    Limpar
+                  </button>
+                </div>
+
+                <p class="md:col-span-2 text-xs text-white/60">
+                  * Este formulário não armazena dados; ele apenas gera a mensagem para o WhatsApp.
+                </p>
+              </form>
+            </div>
+          </div>
+
+          <div class="mt-6 grid md:grid-cols-3 gap-4">
+            <div class="p-5 rounded-3xl border border-white/10 bg-white/5">
+              <p class="text-white/60 text-xs">Passo 1</p>
+              <p class="font-extrabold">Envie os detalhes</p>
+              <p class="text-sm text-white/70 mt-1">Data, tipo e público estimado.</p>
+            </div>
+            <div class="p-5 rounded-3xl border border-white/10 bg-white/5">
+              <p class="text-white/60 text-xs">Passo 2</p>
+              <p class="font-extrabold">Receba a proposta</p>
+              <p class="text-sm text-white/70 mt-1">A equipe retorna com opções.</p>
+            </div>
+            <div class="p-5 rounded-3xl border border-white/10 bg-white/5">
+              <p class="text-white/60 text-xs">Passo 3</p>
+              <p class="font-extrabold">Confirme e realize</p>
+              <p class="text-sm text-white/70 mt-1">Evento pronto para acontecer.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/10 bg-slate-950">
+    <div class="max-w-7xl mx-auto px-6 py-12">
+      <div class="grid md:grid-cols-12 gap-8">
+        <div class="md:col-span-5">
+          <div class="flex items-center gap-3">
+            <div
+              class="w-14 h-14 rounded-2xl bg-white/90 border border-white/20 flex items-center justify-center shadow-soft p-2">
+
+              <img src="https://mirantedopaco.com.br/Imagem/logoPrincipalMirante.png" alt="Mirante do Paço"
+                class="max-w-full max-h-full object-contain" />
+            </div>
+
+            <div>
+              <p class="font-extrabold leading-tight">Mirante do Paço</p>
+              <p class="text-sm text-white/60 leading-tight">
+                Rooftop para eventos • Recife Antigo
+              </p>
+            </div>
+          </div>
+
+          <p class="mt-4 text-white/70 max-w-md">
+            Capacidade 2.500 pessoas • 600 vagas • Produção completa do zero.
+          </p>
+
+          <div class="mt-5 flex gap-3">
+            <a href="#" class="px-4 py-2 rounded-xl border border-white/15 text-white/80 hover:bg-white/5">Instagram</a>
+            <a href="#" class="px-4 py-2 rounded-xl border border-white/15 text-white/80 hover:bg-white/5">LinkedIn</a>
+          </div>
+        </div>
+
+        <div class="md:col-span-3">
+          <p class="font-extrabold">Menu</p>
+          <div class="mt-3 grid gap-2 text-white/75 text-sm">
+            <a class="hover:text-white" href="#sobre">Sobre</a>
+            <a class="hover:text-white" href="#galerias">Galerias</a>
+            <a class="hover:text-white" href="#diferenciais">Diferenciais</a>
+            <a class="hover:text-white" href="#producao">Produção</a>
+            <a class="hover:text-white" href="#clientes">Clientes</a>
+            <a class="hover:text-white" href="#avaliacoes">Avaliações</a>
+            <a class="hover:text-white" href="#localizacao">Localização</a>
+            <a class="hover:text-white" href="#orcamento">Orçamento</a>
+          </div>
+        </div>
+
+        <div class="md:col-span-4">
+          <p class="font-extrabold">Contato</p>
+          <div class="mt-3 grid gap-2 text-white/75 text-sm">
+            <p>📍 Tv. do Amorim, 75 - 4º andar - Recife, PE, 50030-070</p>
+            <p>🏙️ Último piso de edifício garagem (600 vagas)</p>
+            <p>📞 (81) 97345-6956</p>
+            <p>⭐ 4,7 no Google</p>
+          </div>
+          <div class="mt-4 flex gap-3 flex-wrap">
+            <a id="btnWhatsappFooter" target="_blank" rel="noopener"
+              class="inline-flex items-center justify-center px-5 py-3 rounded-2xl bg-emerald-500 text-emerald-950 font-extrabold hover:bg-emerald-400">
+              WhatsApp
+            </a>
+            <a id="btnRotasFooter" target="_blank" rel="noopener"
+              class="inline-flex items-center justify-center px-5 py-3 rounded-2xl border border-white/15 text-white/90 hover:bg-white/5">
+              Rotas
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="mt-10 pt-6 border-t border-white/10 flex flex-col md:flex-row gap-3 items-start md:items-center justify-between text-xs text-white/50">
+        <p>© <span id="year"></span> Mirante do Paço. Todos os direitos reservados.</p>
+        <p>Feito para conversão: orçamento rápido + WhatsApp.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a id="btnWhatsappFloat" target="_blank" rel="noopener"
+    class="fixed bottom-5 right-5 z-50 inline-flex items-center gap-2 px-4 py-3 rounded-2xl bg-emerald-500 text-emerald-950 font-extrabold shadow-soft hover:bg-emerald-400">
+    💬 WhatsApp
+  </a>
+
+  <script>
+    // ====== Settings (edit here) ======
+    const WHATSAPP_NUMBER_E164 = "5581973456956"; // +55 81 97345-6956
+    const BUSINESS_NAME = "Mirante do Paço";
+    const ADDRESS = "Tv. do Amorim, 75 - 4º andar - Recife, PE, 50030-070";
+
+    function waLink(message) {
+      const text = encodeURIComponent(message);
+      return `https://wa.me/${WHATSAPP_NUMBER_E164}?text=${text}`;
+    }
+
+    function routesLink() {
+      const q = encodeURIComponent(`${BUSINESS_NAME} ${ADDRESS}`);
+      return `https://www.google.com/maps/dir/?api=1&destination=${q}`;
+    }
+
+    // Header mobile menu
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+    menuBtn?.addEventListener("click", () => mobileMenu.classList.toggle("hidden"));
+    mobileMenu?.querySelectorAll("a").forEach(a => a.addEventListener("click", () => mobileMenu.classList.add("hidden")));
+
+    // Footer year
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Routes buttons
+    const rotasUrl = routesLink();
+    document.getElementById("btnRotas").href = rotasUrl;
+    document.getElementById("btnRotasFooter").href = rotasUrl;
+
+    // WhatsApp buttons
+    const baseMsg = `Olá! Gostaria de solicitar um orçamento para um evento no ${BUSINESS_NAME}.`;
+    const waBase = waLink(baseMsg);
+
+    [
+      "btnWhatsappTop", "btnWhatsappHero", "btnWhatsappFaq", "btnWhatsappBudget",
+      "btnWhatsappFooter", "btnWhatsappFloat", "btnWhatsappProducao", "btnWhatsappAvaliacao"
+    ].forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.href = waBase;
+    });
+
+    // Mini form -> WhatsApp
+    const miniForm = document.getElementById("miniForm");
+    miniForm?.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const fd = new FormData(miniForm);
+      const nome = (fd.get("nome") || "").toString().trim();
+      const telefone = (fd.get("telefone") || "").toString().trim();
+      const tipo = (fd.get("tipo") || "").toString().trim();
+
+      const msg =
+        `Olá! Meu nome é ${nome}.
+Quero solicitar um orçamento para evento no ${BUSINESS_NAME}.
+
+• Tipo: ${tipo || "—"}
+• Telefone: ${telefone}
+
+Capacidade da casa: 2.500 pessoas (conforme montagem).
+Garagem: 600 vagas (edifício garagem).
+
+Pode me enviar mais informações e disponibilidade?`;
+
+      window.open(waLink(msg), "_blank");
+    });
+
+    // Budget form -> WhatsApp
+    const budgetForm = document.getElementById("budgetForm");
+    budgetForm?.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const fd = new FormData(budgetForm);
+
+      const nome = (fd.get("nome") || "").toString().trim();
+      const telefone = (fd.get("telefone") || "").toString().trim();
+      const email = (fd.get("email") || "").toString().trim();
+      const tipo = (fd.get("tipo") || "").toString().trim();
+      const data = (fd.get("data") || "").toString().trim();
+      const pessoas = (fd.get("pessoas") || "").toString().trim();
+      const mensagem = (fd.get("mensagem") || "").toString().trim();
+
+      const msg =
+        `Olá! Meu nome é ${nome}.
+Quero solicitar um orçamento para evento no ${BUSINESS_NAME}.
+
+• Tipo: ${tipo || "—"}
+• Data pretendida: ${data || "—"}
+• Público estimado: ${pessoas || "—"}
+• Telefone: ${telefone}
+• E-mail: ${email || "—"}
+
+Detalhes:
+${mensagem || "—"}
+
+Infos do espaço:
+• Capacidade: 2.500 pessoas (conforme montagem)
+• Garagem: 600 vagas (edifício garagem / último piso)
+
+Pode me enviar a proposta e orientações?`;
+
+      window.open(waLink(msg), "_blank");
+    });
+
+    // ====== Galeria por evento (tabs + lightbox) ======
+    const galleries = {
+      formatura: {
+        title: "Formatura",
+        desc: "Produção vibrante, palco/dj, iluminação e estrutura para fotos e momentos marcantes.",
+        msg: "Olá! Quero orçamento para uma FORMatura no Mirante do Paço. Pode me orientar sobre datas, estrutura e proposta?",
+        images: [
+          "https://placehold.co/900x700?text=Formatura+01",
+          "https://placehold.co/900x700?text=Formatura+02",
+          "https://placehold.co/900x700?text=Formatura+03",
+          "https://placehold.co/900x700?text=Formatura+04",
+          "https://placehold.co/900x700?text=Formatura+05",
+          "https://placehold.co/900x700?text=Formatura+06"
+        ]
+      },
+      casamento: {
+        title: "Casamento",
+        desc: "Cerimônia e festa com vista: um rooftop elegante para viver o grande dia com estilo.",
+        msg: "Olá! Quero orçamento para um CASAMENTO no Mirante do Paço. Pode me ajudar com proposta e visita?",
+        images: [
+          "https://placehold.co/900x700?text=Casamento+01",
+          "https://placehold.co/900x700?text=Casamento+02",
+          "https://placehold.co/900x700?text=Casamento+03",
+          "https://placehold.co/900x700?text=Casamento+04",
+          "https://placehold.co/900x700?text=Casamento+05",
+          "https://placehold.co/900x700?text=Casamento+06"
+        ]
+      },
+      quinze: {
+        title: "15 anos",
+        desc: "Festa inesquecível com experiência completa: pista, fotos, lounge e produção sob medida.",
+        msg: "Olá! Quero orçamento para uma festa de 15 ANOS no Mirante do Paço. Pode me enviar as opções?",
+        images: [
+          "https://placehold.co/900x700?text=15+anos+01",
+          "https://placehold.co/900x700?text=15+anos+02",
+          "https://placehold.co/900x700?text=15+anos+03",
+          "https://placehold.co/900x700?text=15+anos+04",
+          "https://placehold.co/900x700?text=15+anos+05",
+          "https://placehold.co/900x700?text=15+anos+06"
+        ]
+      },
+      shows: {
+        title: "Shows",
+        desc: "Clima perfeito para música: backstage, camarins e logística para grandes produções.",
+        msg: "Olá! Quero orçamento para um SHOW no Mirante do Paço. Pode me passar condições e datas?",
+        images: [
+          "https://placehold.co/900x700?text=Show+01",
+          "https://placehold.co/900x700?text=Show+02",
+          "https://placehold.co/900x700?text=Show+03",
+          "https://placehold.co/900x700?text=Show+04",
+          "https://placehold.co/900x700?text=Show+05",
+          "https://placehold.co/900x700?text=Show+06"
+        ]
+      },
+      corporativo: {
+        title: "Corporativos",
+        desc: "Eventos corporativos com padrão premium: palco/painel, ativação de marca e experiência completa.",
+        msg: "Olá! Quero orçamento para um evento CORPORATIVO no Mirante do Paço. Pode me enviar proposta?",
+        images: [
+          "https://placehold.co/900x700?text=Corporativo+01",
+          "https://placehold.co/900x700?text=Corporativo+02",
+          "https://placehold.co/900x700?text=Corporativo+03",
+          "https://placehold.co/900x700?text=Corporativo+04",
+          "https://placehold.co/900x700?text=Corporativo+05",
+          "https://placehold.co/900x700?text=Corporativo+06"
+        ]
+      }
+    };
+
+    const galleryTitle = document.getElementById("galleryTitle");
+    const galleryDesc = document.getElementById("galleryDesc");
+    const galleryGrid = document.getElementById("galleryGrid");
+    const tabs = document.querySelectorAll(".gallery-tab");
+    const btnWhatsappGallery = document.getElementById("btnWhatsappGallery");
+
+    function renderGallery(cat) {
+      const g = galleries[cat] || galleries.formatura;
+
+      // Active tab styles
+      tabs.forEach(t => {
+        const active = t.dataset.cat === cat;
+        t.classList.toggle("bg-white/5", active);
+        t.classList.toggle("border-white/25", active);
+      });
+
+      galleryTitle.textContent = g.title;
+      galleryDesc.textContent = g.desc;
+      btnWhatsappGallery.href = waLink(g.msg);
+
+      // grid
+      galleryGrid.innerHTML = "";
+      g.images.forEach((src, idx) => {
+        const card = document.createElement("button");
+        card.type = "button";
+        card.className = "group relative rounded-3xl overflow-hidden border border-white/10 bg-white/5 shadow-soft focus:outline-none focus:ring-2 focus:ring-gold/50";
+        card.innerHTML = `
+          <img src="${src}" alt="${g.title} - foto ${idx + 1} (ilustrativa)" class="w-full h-52 md:h-56 object-cover opacity-90 group-hover:opacity-100 transition">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent"></div>
+          <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between">
+            <span class="text-sm font-extrabold">${g.title}</span>
+            <span class="text-xs text-white/80 px-2 py-1 rounded-full bg-white/10 border border-white/10">Ver</span>
+          </div>
+        `;
+        card.addEventListener("click", () => openLightbox(src));
+        galleryGrid.appendChild(card);
+      });
+    }
+
+    tabs.forEach(t => t.addEventListener("click", () => renderGallery(t.dataset.cat)));
+    // default
+    renderGallery("formatura");
+
+    // Lightbox
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightboxImg");
+    const lightboxClose = document.getElementById("lightboxClose");
+    function openLightbox(src) {
+      lightboxImg.src = src;
+      lightbox.classList.remove("hidden");
+      lightbox.classList.add("flex");
+    }
+    function closeLightbox() {
+      lightbox.classList.add("hidden");
+      lightbox.classList.remove("flex");
+      lightboxImg.src = "";
+    }
+    lightboxClose.addEventListener("click", closeLightbox);
+    lightbox.addEventListener("click", (e) => {
+      if (e.target === lightbox) closeLightbox();
+    });
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && !lightbox.classList.contains("hidden")) closeLightbox();
+    });
+  </script>
+</body>
+
+</html>
